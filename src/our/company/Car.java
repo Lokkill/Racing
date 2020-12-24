@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 public class Car implements Runnable{
     private static int CARS_COUNT;
-    private static boolean hasWinner;
+    private volatile static boolean hasWinner;
     static {
         CARS_COUNT = 0;
     }
